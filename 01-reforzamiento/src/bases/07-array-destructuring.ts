@@ -23,3 +23,5 @@ const useState = (value: string) =>{
 console.log(name);  //imprime Goky
 setName('Broly');    // imprime broly
 
+
+

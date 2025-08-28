@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 export function MyAwesomeApp () {
 
     const letras = 'zxdc';
@@ -10,6 +12,14 @@ export function MyAwesomeApp () {
         lugar: 'myz',
         cordenada: '123-ZXC'
 
+    }
+
+
+    const myStyles: CSSProperties = {
+        backgroundColor: '#fafaba',
+        borderRadius: 20,
+        padding: 10,
+        marginTop: 20
     }
 
     const favoriteGames = ['Smash', 'Fortnite', 'Overwatch'];
@@ -28,6 +38,7 @@ export function MyAwesomeApp () {
 
 
         <p>{JSON.stringify(address)}</p>
+        <p style={myStyles}>mi estilo css</p>
         </>
     )
 }
